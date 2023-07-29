@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #eb2a29;
+    --secondary: rgb(63, 62, 62);
+    --accent: #f05b5b;
+    --background: #fff;
+    --text: #252525;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    min-height: 100vh;
+    margin: 0;
+    padding-inline: 100px;
+    position: relative;
+}
+
+#Layer_1 {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 40px;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navlinks a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.hero {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bigtitle {
+    font-size: 50px;
+    color: var(--primary);
+    margin-block: 0px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.special {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.downloadGroup {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.download {
+    padding: 15px 20px;
+    background-color: var(--primary);
+    color: var(--background);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 20px;
+    font-weight: 500;
+}
+.download:hover {
+    background-color: var(--accent);
+}
+
+img {
+    object-fit: cover;
+}
+
+#windows {
+    margin-top: 3px;
+    width: 75px;
+}
+
+#mac {
+    width: 38px;
+    margin-top: 3px;
+}
+.display {
+    position: relative;
+    margin-top: 40px;
+}
+
+.showcaseimg {
+    width: 750px;
+    margin-right: 20px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.background {
+    width: 750px;
+    height: 375px;
+    background-color: var(--primary);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1300px) {
+    .hero {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
